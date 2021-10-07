@@ -1,0 +1,179 @@
+<?php 
+
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>ITALIJA</title>
+	<link rel="stylesheet" type="text/CSS" href="Style.css">
+</head>
+<body>
+
+<div class="header" >
+
+
+<div>
+  <img src="img/labiau.png" alt="Italian Trulli">
+   </div>
+
+</div>
+	<nav>
+	<ul>
+
+		<li><a href="index.php?link=naujienos">Naujienos</a></li>
+		<li><a href="index.php?link=straipsniai">Straipsniai žmonių</a></li>
+		<li><a href="index.php?link=fotoalbumas">Fotoalbumas Italijos žymių vietų</a></li>
+		<li><a href="index.php?link=atsiliepimai">Atsiliepimai nuo žmoniu</a></li>
+<li><a href="index.php?link=Uzsakymai">Keliones</a></li>
+		</ul>
+	</nav>
+	
+	
+
+	
+
+
+
+
+
+
+
+
+<div class = "main">
+<?php  
+function reglog(){
+?>
+<div id = "reglog"  class = "logi" >
+<form method = "Post">
+
+<button type="submit" name="registration" value "Registracija" >  Registracija</button>
+<button type="submit" name="login" value "Prisijungimas">Prisijungimas </button>
+</form>
+</div>
+<?php
+}
+include "login.php";
+
+function registr($name, $surname, $email, $age){	
+
+?>
+
+<div id = "reg">
+
+
+<form method = "Post">
+<p>Vardas
+<input type="text" name="vardas" placeholder ="jusu vardas:">
+</p>
+<p>Pavardes
+<input type="text" name="pavarde" placeholder ="jusu pavarde:">
+</p>
+<p>El. pastas adresas
+<input type="email" name="email" placeholder ="jusu el pastas:">
+</p>
+<p>slaptazodi
+<input type="password" name="slapt">
+</p>
+<p>pakartoti slaptazodi
+<input type="password" name="slapt1">
+</p>
+<p>Amzius
+<input type="number" min= "8" name="age" placeholder ="amzius:"></p>
+<input type="submit" value="Registruotis" name ="reg">
+</form>
+</div>
+
+
+<?php
+}
+function prisijung($email){
+
+?>
+<div id = "login">
+<form method = "Post">
+
+<p>El. pastas adresas
+<input type="email" name="email1" placeholder ="jusu el pastas">
+</p>
+<p>slaptazodi
+<input type="password" name="password1">
+</p>
+<input type="submit" name="prisijungti" value="Prisijungti">
+</form>
+</div>
+	<?php
+}
+function logout($user_id){	
+
+?>
+<div id ="logout">
+<form method = "Post">
+
+
+<input type="submit" value="Atsijungti" name ="atsijungti">
+
+<a href="logout.php" tite="Logout">Logout.</a>
+
+
+</form>
+</div>
+
+<?php
+}
+?>
+
+<div id="container">
+
+	<aside class="col_25 right box shadow center">
+	
+	
+	<?php
+
+	//reklama
+	include "reklama.php";    
+	?>
+
+
+	</aside>
+	
+	<article  class="col_70 left box shadow">
+	<section>
+<?php
+//gauname $_GET kintamaji ir tikriname, kas perduodama
+		if(isset($_GET['link'])) {
+		  $link = $_GET['link'];
+			//echo $link;
+			
+			if($link == 'naujienos') { include 'naujienos.php';}
+			elseif($link == 'straipsniai') {include 'straipsniai.php';}
+			elseif($link == 'fotoalbumas') {include 'fotoalbumas.php';}
+			elseif($link == 'atsiliepimai') {include 'atsiliepimai.php';}
+			elseif($link == 'Uzsakymai') {include 'Uzsakymai.php';}
+		}
+		else { include 'naujienos.php'; }
+	
+?>	
+	</section>
+
+	</article>
+	
+</div>
+	<div class="clear"></div>
+</div>
+
+
+
+<div class = "footer">
+<p> Contact Us: +95 000 000 00    <?php include "sk1.php" ; ?>       
+ </p>
+
+</div>
+
+
+
+
+	
+</body>
+</html>

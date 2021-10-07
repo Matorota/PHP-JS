@@ -1,0 +1,188 @@
+.header {
+  background-image: url("img/italy-colosseum-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 26px;
+  text-align: center;
+  height:200px;
+  font-size: 30px;
+  
+}
+body {
+	margin:0px;
+	font-family:sans-serif, verdana;
+	font-size:18px;	 
+}
+header, footer {
+	width:100%;	
+}
+body > header {
+	min-height:150px;
+}
+
+.logi {
+  background-color: #8EE4AF; 
+  border: none;
+  color: white;
+  padding: 6px;
+    opacity:90%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.pagalba{
+height:500px;
+width:800px;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 50px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.footer {
+  position: fixed;
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #131862;
+  color: white;
+
+  float: left;
+  text-align: center;
+  opacity:60%;
+  height:60px;
+  background-image: url("img/unnamed.png");
+}
+
+
+.main {   
+  flex: 70%;
+  background-color: #195824;
+  padding: 20px;
+}
+
+
+
+
+.col_25 {
+	width:25%;
+}
+.col_70 {
+	width:70%;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.box {
+	border:solid 1px #699;
+	border-radius: 10px;
+}
+.shadow	{
+	box-shadow:0px 2px 2px #ccc;
+	-moz-box-shadow:0px 2px 2px #ccc;
+}
+.clear {
+	clear:both;
+}
+.center {
+	text-align:center;
+}
+.atsiliepimas {
+	width:600px;
+	padding:0.5em;
+	margin:8px;
+}
+
+
+container {
+	background:#5CDB95;
+	min-width:1200px;
+	min-height:600px;
+	margin:auto;
+	padding:30px;
+}
+.reklama_img {
+	width:80%;
+	margin:auto;
+}
+
+#reglog, #logout, #userinfo #login, #reg
+{
+	border-style:solid;
+	margin: 0px;
+	border-style:solid;
+	float:center;
+}
+.pranesimas{
+	
+}
+
+#userinfo {
+	font-size: 10pt;
+}
+
+.submenu {
+  border-radius: 4px;
+  padding: 5px;
+
+}
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  border: 5px solid green;
+}
+.container img {
+    width: 100%;
+    height: auto;
+}
+.straipsnis
+{
+			
+	width:40%;
+    float:right;
+    border:solid 1px #ccc;  
+	margin:2%;
+	text-align:center;	
+	background-color: white;
+	border: 5px solid green;
+}
+.straipsnis img {
+	height:135px;
+}

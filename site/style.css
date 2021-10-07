@@ -1,0 +1,221 @@
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+body {
+	margin:0px;
+	font-family:sans-serif, verdana;
+	font-size:18px;	 
+}
+header, footer {
+	width:100%;	
+}
+body > header {
+	background: #eee;
+	min-height:150px;
+}
+header h2 {
+	font-size:4rem;
+	font-family:Bodoni MT Black;
+}
+footer {
+	height:80px;
+	background:#eee;
+	/*position:fixed;
+	bottom:0px;*/
+	padding:15px 0;
+}
+header  h2, footer  p {
+	text-align:center;
+}
+
+.top {
+	background:#fff;
+	min-height:60px;
+	font-size:80%;
+}
+.logo {
+	position:absolute;
+	z-index:10;
+	left:50px;
+	width:100px;
+	height:80px;
+	background:#eee;
+	border:solid #333;
+	border-width:1px 6px 6px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+.transform {
+	transform:rotate(-30deg);
+	text-align:center;
+	padding:10px;
+	font-size:30px;
+	font-family:Bodoni MT Black;
+}
+.transform span {
+	font-size:18px;
+	vertical-align:top;	
+}
+.date {
+	padding:10px 200px;
+	font-size:18px;
+	width:500px;
+	display:inline-block;
+}
+.menu {
+	text-align:center;
+	margin:10px 0;
+}	
+.menu > nav ul li {
+	list-style-type:none;
+	display:inline-block;
+	min-width:120px;
+	padding: 8px 5px;
+}
+
+/* main  */
+#container {
+	background:#fefefe;
+	min-width:1200px;
+	min-height:600px;
+	margin:auto;
+	padding:30px;
+}
+
+.col_25 {
+	width:25%;
+}
+.col_70 {
+	width:70%;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.box {
+	border:solid 1px #699;
+	border-radius: 10px;
+}
+.shadow	{
+	box-shadow:0px 2px 2px #ccc;
+	-moz-box-shadow:0px 2px 2px #ccc;
+}
+.clear {
+	clear:both;
+}
+
+article, aside {
+	min-height: 450px;
+}
+section {
+	min-height: 250px;
+}
+
+#container section>header {
+	background: #eee;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-transform: uppercase;
+	text-align:center;
+	height:35px;
+}
+.center {
+	text-align:center;
+}
+.submenu a {
+	display:inline-block;
+	margin:15px;
+}
+
+div.prisijunk {
+	padding:10px;
+	float:right;
+	width:400px;
+}
+section p {
+	margin:10px;
+}
+.klaida {
+	color:#f00;
+}
+/* calendar */
+.calendar {
+	margin:15px auto;
+	width:240px;
+	border:solid 1px #667084;
+	border-spacing:0px;
+}
+th, td {
+	line-height:1.5em;
+	font-size:12pt;
+	text-align:center;
+}
+th {
+	background:#ddd;
+}
+tr:nth-of-type(2) {
+	background:#ddd;
+}
+.siandien {
+	border:solid #f00;
+}
+/* receptas, reklama */
+.receptas {
+	text-align:center;
+	border:solid 1px #667084;
+	margin:10px 20px;
+}
+.reklama_img {
+	width:80%;
+	margin:auto;
+}
+.receptas > h1 {
+	font-size:14pt;
+	font-weight:normal;
+	margin-bottom:1em;
+}
+.receptas > img {
+	width:140px;
+}
+/*
+.reklama {
+	text-align:center;
+}*/
+
+.left15 {
+	margin-left:50px;
+}
+ .bullets_no > li {
+	 list-style-type: none;
+ }
+ 
+ /* atsiliepimai */
+ .atsiliepimu {
+	width:50%;
+	margin:auto;
+}
+.atsiliepimu > label, .atsiliepimu > input {
+	display: block;
+}
+.nick {
+	background-color:#CCC;
+}
+.data {
+	font-size:80%;
+}
+.pranesimas {
+	font-style:italic;
+}
+.atsiliepimas {
+	background:#eeeefe;
+	width:600px;
+	padding:0.5em;
+	margin:8px;
+}
+
+ 
+
